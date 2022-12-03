@@ -26,5 +26,6 @@ export class UserController {
 		// Type 'CreateUserDto' is not assignable to type 'Omit<any, string>'.
 		// Index signature for type 'number' is missing in type 'CreateUserDto'.
 		await this.userModel.create(body)
+		// В body приходит нормальный объект, который без проблем записывается в таблицу.
 	}
 }
